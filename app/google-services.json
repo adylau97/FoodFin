@@ -1,0 +1,66 @@
+{
+  "project_info": {
+    "project_number": "700645407154",
+    "firebase_url": "https://snitch-1512814185902.firebaseio.com",
+    "project_id": "snitch-1512814185902",
+    "storage_bucket": "snitch-1512814185902.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700645407154:android:9a3e264b6b000dbd",
+        "android_client_info": {
+          "package_name": "com.mhp.foodfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700645407154-0a562kuh9o0dqnqejng08mjohe0vt3m1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mhp.foodfinder",
+            "certificate_hash": "b599e32ca303c1155de90d3c5f72d19b51a11ad3"
+          }
+        },
+        {
+          "client_id": "700645407154-ab0mpnh163jkih424nlvknfjddsab1ca.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "700645407154-6ij6aj6c0arq8qh0hag8hjqv01d468m5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0BomlAZgrcgEEXS_RBEU8itWYJPr-q3o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700645407154-ab0mpnh163jkih424nlvknfjddsab1ca.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "700645407154-23n98f6fng443q907vvaeh8qhb6nkvjc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.KhooZy.Snitch"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

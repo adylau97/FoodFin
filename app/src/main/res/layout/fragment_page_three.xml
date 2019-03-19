@@ -1,0 +1,90 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/where_to_eat"
+    tools:context="com.mhp.foodfinder.Fragment.PageThree">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/price_selector"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight=".335"
+                android:background="@drawable/radio_states_yellow"
+                android:button="@null"
+                android:drawableTop="@drawable/money_1_r"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@drawable/radio_text" />
+
+            <RadioButton
+                android:id="@+id/price2"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight=".335"
+                android:background="@drawable/radio_states_yellow"
+                android:button="@null"
+                android:drawableTop="@drawable/money_2_r"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@drawable/radio_text" />
+
+            <RadioButton
+                android:id="@+id/price3"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight=".335"
+                android:background="@drawable/radio_states_yellow"
+                android:button="@null"
+                android:drawableTop="@drawable/money_3_r"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@drawable/radio_text" />
+
+            <RadioButton
+                android:id="@+id/price4"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight=".335"
+                android:background="@drawable/radio_states_yellow"
+                android:button="@null"
+                android:drawableTop="@drawable/money_4_r"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@drawable/radio_text" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="76dp"
+            android:text="Start Asking!" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_sheet_content" />
+
+</android.support.design.widget.CoordinatorLayout>

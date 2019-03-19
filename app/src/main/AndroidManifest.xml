@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mhp.foodfinder">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".Activity.Notification_receiver" />
+
+        <activity
+            android:name=".Activity.CreateAcc"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mhp.foodfinder.CreateAcc" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MoreWays"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mhp.foodfinder.MoreWays" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Loginwithemail"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mhp.foodfinder.Loginwithemail" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Snitch"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mhp.foodfinder.Snitch" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Snitch_v2"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/title_activity_snitch_v2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.mhp.foodfinder.Snitch_v2" />
+                <action android:name="android.intent.action.DIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Fragment.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ViewDirection"
+            android:label="@string/title_activity_view_direction" />
+        <activity
+            android:name=".Activity.PlacesInsert"
+            android:label="@string/title_activity_places_insert"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ListFoodPlaces"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PlacesUpdate"
+            android:label="@string/title_activity_places_update"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UserSettings"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.Menu_ViewPager" />
+        <activity android:name=".Activity.ResetPassword"></activity>
+    </application>
+
+</manifest>

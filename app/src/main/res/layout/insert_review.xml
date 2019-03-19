@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="Rate it?"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/review_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/review1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight=".335"
+            android:background="@drawable/radio_states_green"
+            android:button="@null"
+            android:drawableRight="@drawable/rating1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/radio_text" />
+
+        <RadioButton
+            android:id="@+id/review2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight=".335"
+            android:background="@drawable/radio_states_green"
+            android:button="@null"
+            android:drawableRight="@drawable/rating2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/radio_text" />
+
+        <RadioButton
+            android:id="@+id/review3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight=".335"
+            android:background="@drawable/radio_states_green"
+            android:button="@null"
+            android:drawableRight="@drawable/rating3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/radio_text" />
+
+        <RadioButton
+            android:id="@+id/review4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight=".335"
+            android:background="@drawable/radio_states_green"
+            android:button="@null"
+            android:drawableRight="@drawable/rating4"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/radio_text" />
+
+        <RadioButton
+            android:id="@+id/review5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".335"
+            android:background="@drawable/radio_states_green"
+            android:button="@null"
+            android:drawableRight="@drawable/rating5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/radio_text" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/reviewText"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/review_selector"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Please enter your review."
+        android:inputType="textMultiLine"
+        android:maxLength="135"
+        android:maxLines="5"
+        />
+
+    <ru.dimorinny.floatingtextbutton.FloatingTextButton
+        android:id="@+id/insert_review_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reviewText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        app:floating_background_color="@color/colorPrimary"
+        app:floating_left_icon="@drawable/ic_add"
+        app:floating_title="Insert"
+        app:floating_title_color="@android:color/white"/>
+
+
+
+</RelativeLayout>

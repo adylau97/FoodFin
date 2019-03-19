@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mhp.foodfinder.Fragment.PageFour">
+
+    <TextView
+        android:id="@+id/Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:paddingStart="20dp"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="5dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/usersettings"
+        android:hapticFeedbackEnabled="true"
+        android:layout_below="@+id/Settings"
+        android:background="@drawable/border_bottom"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_profile"
+            android:layout_marginStart="10dp"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:paddingTop="20dp"
+            android:text="User Profile"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/usersettings"
+        android:id="@+id/foodplaces"
+        android:hapticFeedbackEnabled="true"
+        android:background="@drawable/border_bottom">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_addlocation"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:paddingTop="20dp"
+            android:text="List Food Places Created"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/foodplaces"
+        android:id="@+id/logout"
+        android:hapticFeedbackEnabled="true"
+        android:background="@drawable/border_bottom">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_logout"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:paddingTop="20dp"
+            android:text="Sign Out !!"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
